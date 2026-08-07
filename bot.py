@@ -3,8 +3,8 @@ import asyncio
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, ChatJoinRequestHandler, filters, ContextTypes
 
-TOKEN = "8802295736:AAGocEDjNWTiajaljb5PyWlP2VEJ5Hrrmjk"
-ADMIN_ID = 6974733319
+TOKEN = "8965887211:AAFwW2fXo8d9sAAClfahwcNGUGghG6RpUjw"
+ADMIN_ID = 6690200843
 
 # DATABASE
 db = sqlite3.connect("bot.db")
