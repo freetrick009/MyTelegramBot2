@@ -175,12 +175,16 @@ async def button(update:Update,context):
 
 # MESSAGE HANDLER
 
-async def messages(update:Update,context):
+async def messages(update: Update, context):
 
-    user=update.effective_user
+    user = update.effective_user
+
+    if user is None:
+        return
+
     add_user(user)
 
-    msg=update.message
+    msg = update.message
 
     # SET GREETING
     if context.user_data.get("setgreet"):
